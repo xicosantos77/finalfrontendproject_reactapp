@@ -1,0 +1,117 @@
+@import "../font-sizes";
+
+.testimonials {
+    background-color: #f4f4f4;
+    margin: 80px;
+    display: flex;
+
+    @media screen and (max-width: 576px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+    } 
+  
+    .testimonials-text {
+        padding: 80px;
+        width: 40%;
+  
+        h3, p {
+        font-size: $p1-size;
+        }
+  
+        h2 {
+            font-size: $h2-size;
+        }
+
+        @media screen and (max-width: 1440px){
+            h2{
+                font-size: $h2-size-bg;
+            }
+        } 
+
+        @media screen and (max-width: 576px){
+            padding: 40px;
+            width: 60%;
+        } 
+    }
+  
+    .testimonials-carousel {
+        padding: 80px;
+        width: 60%;
+
+        @media screen and (max-width: 1440px){
+            h2{
+                font-size: $h2-size-bg;
+            }
+        } 
+  
+        @media screen and (max-width: 576px){
+            padding: 40px;
+        } 
+        
+        .testimonials-carousel-inner {
+            .testimonials-carousel-slide {
+                display: none;
+  
+                &.active {
+                    display: block;
+                }
+
+                .testimonials-carrousel-content {
+                    font-size: $h5-size;
+    
+                    @media screen and (max-width: 1200px){
+                        font-size: $h3-size-bg;
+                    } 
+                }
+            }
+  
+  
+            .testimonials-carousel-content-author {        
+                display: flex;
+                justify-content: space-between;
+
+                .testimonials-carousel-content-author-photo {
+                    display: flex;
+                    align-items: center;
+                    img{
+                        height: 48px;
+                        width: 48px;
+                        margin-right: 20px;
+                    }
+                    h2{
+                        margin: 0;
+
+                        @media screen and (max-width: 1200px){
+                            font-size: $h5-size;
+                        } 
+
+                        @media screen and (max-width: 1200px){
+                            font-size: $h3-size-bg;
+                        } 
+                    }
+                    p{
+                        margin: 0;
+
+                        @media screen and (max-width: 1200px){
+                            font-size: $h5-size-bg;
+                        }
+                    }
+                }
+
+                .testimonials-carousel-controls{
+                    display: flex;
+
+                    .testimonials-carousel-controls-prev{
+                        margin-right: 30px;
+                    }
+                    
+                    .testimonials-carousel-controls-prev:hover, .testimonials-carousel-controls-next:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

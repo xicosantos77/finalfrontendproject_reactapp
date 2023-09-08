@@ -1,0 +1,239 @@
+@import "../font-sizes";
+@import "../mixins";
+
+.hidden{
+    display: none;
+}
+
+.carroussel{
+    .carroussel-inner{
+        width: 100%;
+
+        .carroussel-item-img{
+            position: relative;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .carroussel-item-textbox{
+                width: 50%;
+                
+                @media screen and (max-width: 1440px){
+                    width: 40%;
+                }
+
+                @media screen and (max-width: 1200px){
+                    width: 60%;
+                }
+
+                @media screen and (max-width: 576px){
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .carroussel-item-textbox-title1{
+                    font-size: $h6-size;
+                    margin-top: 0px;
+                    margin-bottom: 24px;
+
+                    @media screen and (max-width: 1200px){
+                        font-size: $h6-size-bg;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 576px){
+                        margin-bottom: 10px;
+                    }
+                }
+                .carroussel-item-textbox-title2{
+                    font-size: $title-size;
+                    margin-top: 0px;
+                    margin-bottom: 24px;
+
+                    @media screen and (max-width: 1440px){
+                        font-size: $title-size-bg;
+                    }
+
+                    @media screen and (max-width: 1200px){
+                        font-size: $title-size-md;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 576px){
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+
+                }
+                .carroussel-item-textbox-author{
+                    font-size: $h6-size;
+                    margin-top: 0px;
+                    margin-bottom: 24px;
+
+                    @media screen and (max-width: 1200px){
+                        font-size: $h6-size-bg;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 576px){
+                        margin-bottom: 10px;
+                    }
+                }
+                .carroussel-item-textbox-desc{
+                    font-size: $p1-size;
+                    margin-top: 0px;
+                    margin-bottom: 24px;
+
+
+                    @media screen and (max-width: 1200px){
+                        font-size: $p1-size-bg;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 576px){
+                        display: none;
+                    }
+                }
+
+                .carroussel-item-textbox-button{
+                    @include button(#ffd050,#232523);
+                    width: 130px;
+
+                    @media screen and (max-width: 1440px){
+                        width: 80px;
+                        padding: 12px 24px;
+                        margin-bottom: 20px;
+
+                        a{
+                            h2{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 1200px){
+                        width: 80px;
+                        padding: 8px 20px;
+
+                        a{
+                            h2{
+                                font-size: $p1-size-bg;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 576px){
+                        width: 16%;
+                    }
+                }
+            }
+        }
+
+        .carroussel-item-textbox{
+            right: 0px;
+            top: 128px;
+            left: 80px;
+            bottom: 0px;
+            position: absolute;
+
+            @media screen and (max-width: 1440px){
+                top: 96px;
+            }
+
+            @media screen and (max-width: 1200px){
+                top: 96px;
+            }
+
+            @media screen and (max-width: 576px){
+                top: 32px;
+                left: 20px;
+            }
+        }
+    }
+
+    .carroussel-navigation{
+        padding: 10px 80px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #f4f4f4;
+
+        .next-button{
+            h1{
+                margin: 0px;
+                color: #232536;
+            }
+
+            h1:hover{
+                transform: scale(1.5);
+                transition: ease .5s;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            h1:not(:hover){
+                transform: scale(1);
+                transition: ease-in-out .2s;
+            }
+
+            @media screen and (max-width: 576px){
+                font-size: $p2-size-bg;
+            }
+        }
+
+        .prev-button{
+            h1{
+                margin: 0px;
+                color: #232536
+            }
+
+            h1:hover{
+                transform: scale(1.5);
+                transition: ease .5s;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            h1:not(:hover){
+                transform: scale(1);
+                transition: ease-in-out .2s;
+            }
+
+            @media screen and (max-width: 576px){
+                font-size: $p2-size-bg;
+            }
+        }
+
+    
+        .carroussel-navigation-progressbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+
+            .dot{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #ccc;
+                margin: 0 5px;
+                transition: background-color 0.3s ease;
+
+                @media screen and (max-width: 576px){
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &.active{
+                    background-color: #232536;
+                }
+            }
+        }
+    }
+}

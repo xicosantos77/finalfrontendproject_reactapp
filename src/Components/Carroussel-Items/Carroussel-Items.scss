@@ -1,0 +1,71 @@
+@import "../font-sizes";
+
+.carrousselItems{
+    padding: 80px;
+
+    @media screen and (max-width: 576px){
+        padding: 40px;
+    }
+
+    .carrousselItems-items{
+        display: flex;
+        height: 450px;
+
+        a{
+            text-decoration: none;
+            color: #232523;
+        }
+
+        a:hover{
+            transform: scale(1.02);
+            transition: ease .2s;
+            font-weight: bold;
+            background-color: #ffd050;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        a:not(:hover){
+            transform: scale(1);
+            transition: ease-in-out .2s;
+        }
+
+        .carrousselItems-items-item-photo{
+            padding: 16px;
+        }
+        .carrousselItems-items-item-text{
+            padding: 0px 16px 0px 16px;
+        }
+
+        @media screen and (max-width: 576px){
+            p{
+                font-size: $p1-size-bg;
+            }
+
+            h3{
+                font-size: $h3-size-bg;
+            }
+
+            p{
+                display: $p2-size;
+            }
+
+            img{
+                height: 150px;
+            }
+        }
+    }
+
+    .carrousselItems-buttons{
+        display: flex;
+        justify-content: space-around;
+
+        h1:hover{
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 576px){
+            font-size: $h3-size-md;
+        }
+    }
+}

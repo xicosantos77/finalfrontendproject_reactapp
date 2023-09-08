@@ -1,0 +1,108 @@
+@import "../font-sizes";
+
+.authors{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 80px 20px 80px;
+
+    @media screen and (max-width:1200px){
+        padding-top: 100px;
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 576px){
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 4px 20px 20px 20px;
+    } 
+
+    .authors-title{
+        text-align: center;
+        font-size: $h3-size;
+
+        h2{
+            margin: 0;
+            
+            @media screen and (max-width: 576px){
+                text-align: center;
+                font-size: $h2-size-bg;
+            } 
+        }
+    }
+
+    .authors-authors{
+        display: flex;
+        width: 100%;
+        margin-top: 80px;
+        
+
+        @media screen and (max-width: 576px){
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        } 
+        
+        .authors-authors-item{
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+
+            img{
+                border-radius: 100%;
+            }
+
+            @media screen and (max-width: 576px){
+                background-color: #f4f4f4;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            } 
+            
+            p{
+                margin: 0;
+            }
+
+            .authors-authors-item-social{
+                display: flex;
+                margin-top: 10px;
+                img{
+                    margin: 10px
+                }
+            }
+        }
+
+        .authors-authors-item:hover{
+            background-color: #b3b3b3;
+        }
+    }
+
+    .authors-featured{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 1200px){
+            img{
+                transform: scale(0.7);
+            }
+        } 
+
+        @media screen and (max-width: 576px){
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img{
+                margin-top: 10px
+            };
+        } 
+    }
+}

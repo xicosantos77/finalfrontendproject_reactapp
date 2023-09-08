@@ -1,0 +1,125 @@
+@import "../Components/font-sizes";
+
+.contactUs{
+    margin: 0 auto;
+    padding-bottom: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 576px){
+        padding: 0px 40px 40px 40px;
+    }
+
+    .contactUs-text{
+        padding-bottom: 80px;
+
+        h6{
+            font-size: $h6-size;
+        }
+
+        h1{
+            font-size: $h2-size;
+        }
+
+        p{
+            font-size: $p1-size;
+        }
+    }
+
+    .contactUs-info{
+        padding: 20px 60px 20px 60px;
+        background-color: #592EA9;
+        width: 50%;
+        display: flex;
+        text-align: left;
+        color: #f4f4f4;
+
+        p{
+            font-size: $p1-size;
+        }
+
+        h5{
+            font-size: $h6-size;
+        }
+
+        br{
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #f4f4f4;
+        }
+
+        @media screen and (max-width: 576px){
+            width: 70%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contactUs-info-workingHours{
+            width: 50%;
+
+            @media screen and (max-width: 576px){
+                width: 100%;
+            }
+        }
+
+        .contactUs-info-contactUs{
+            width: 50%;
+
+            @media screen and (max-width: 576px){
+                width: 100%;
+            }
+        }
+    }
+
+    .contactUs-form{
+        width: 50%;
+        padding-top: 40px;
+
+        @media screen and (max-width: 576px){
+            width: 90%;
+            flex-direction: column;
+        }
+
+        .contactUs-form-inputs{
+            display: flex;
+            flex-direction: column;
+
+            input, select{
+                height: 40px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .contactUs-form-button{
+            margin-top: 40px;
+            background-color: #ffd050;
+            height: 42px;
+            border: 1px solid #232536;
+            border-radius: 0px;
+            width: 100%;
+
+            h2{
+                margin-top: 6px;
+                font-size: 20px;
+                color: #232536;
+            }
+        }
+
+        .contactUs-form-button:hover{
+            transform: scale(1.1);
+            transition: ease .5s;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid orange;
+            border-radius: 10px;
+        }
+
+        .contactUs-form-button:not(:hover){
+            transform: scale(1);
+            transition: ease-in-out .2s;
+        }
+    }
+}
