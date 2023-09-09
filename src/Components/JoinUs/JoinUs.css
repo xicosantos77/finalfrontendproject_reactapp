@@ -4,7 +4,7 @@
   align-items: center;
   margin-bottom: 80px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .joinus {
     padding-left: 40px;
     padding-right: 40px;

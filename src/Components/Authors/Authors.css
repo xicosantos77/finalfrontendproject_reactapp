@@ -17,6 +17,11 @@
     padding: 4px 20px 20px 20px;
   }
 }
+@media screen and (max-width: 576px) {
+  .authors {
+    margin-top: 400px;
+  }
+}
 .authors .authors-title {
   text-align: center;
   font-size: 28px;

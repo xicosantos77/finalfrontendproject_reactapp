@@ -15,7 +15,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .carroussel .carroussel-inner .carroussel-item-img img {
     height: 250px;
   }
@@ -164,7 +164,7 @@
     width: 16%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .carroussel .carroussel-inner .carroussel-item-img .carroussel-item-textbox .carroussel-item-textbox-button {
     width: 80px;
   }

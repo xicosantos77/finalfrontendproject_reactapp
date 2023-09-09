@@ -139,7 +139,7 @@
 .category-carroussel .category-carroussel-display .category-carroussel-display-img {
   max-width: 75%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .category-carroussel .category-carroussel-display .category-carroussel-display-img {
     max-width: 100%;
   }
@@ -170,7 +170,7 @@
     padding: 40px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .category-carroussel .category-carroussel-display .category-carroussel-display-desc {
     top: 80%;
     left: 0%;
@@ -219,7 +219,7 @@
   transform: scale(1);
   transition: ease-in-out 0.2s;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .category-carroussel .category-carroussel-display .category-carroussel-display-desc div a {
     font-size: 15px;
   }
