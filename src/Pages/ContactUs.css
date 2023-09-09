@@ -1,0 +1,111 @@
+.contactUs {
+  margin: 0 auto;
+  padding-bottom: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .contactUs {
+    padding: 0px 40px 40px 40px;
+  }
+}
+.contactUs .contactUs-text {
+  padding-bottom: 80px;
+}
+.contactUs .contactUs-text h6 {
+  font-size: 16px;
+}
+.contactUs .contactUs-text h1 {
+  font-size: 36px;
+}
+.contactUs .contactUs-text p {
+  font-size: 16px;
+}
+.contactUs .contactUs-info {
+  padding: 20px 60px 20px 60px;
+  background-color: #592EA9;
+  width: 50%;
+  display: flex;
+  text-align: left;
+  color: #f4f4f4;
+}
+.contactUs .contactUs-info p {
+  font-size: 16px;
+}
+.contactUs .contactUs-info h5 {
+  font-size: 16px;
+}
+.contactUs .contactUs-info br {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #f4f4f4;
+}
+@media screen and (max-width: 576px) {
+  .contactUs .contactUs-info {
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contactUs .contactUs-info .contactUs-info-workingHours {
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .contactUs .contactUs-info .contactUs-info-workingHours {
+    width: 100%;
+  }
+}
+.contactUs .contactUs-info .contactUs-info-contactUs {
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .contactUs .contactUs-info .contactUs-info-contactUs {
+    width: 100%;
+  }
+}
+.contactUs .contactUs-form {
+  width: 50%;
+  padding-top: 40px;
+}
+@media screen and (max-width: 576px) {
+  .contactUs .contactUs-form {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+.contactUs .contactUs-form .contactUs-form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.contactUs .contactUs-form .contactUs-form-inputs input, .contactUs .contactUs-form .contactUs-form-inputs select {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.contactUs .contactUs-form .contactUs-form-button {
+  margin-top: 40px;
+  background-color: #ffd050;
+  height: 42px;
+  border: 1px solid #232536;
+  border-radius: 0px;
+  width: 100%;
+}
+.contactUs .contactUs-form .contactUs-form-button h2 {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #232536;
+}
+.contactUs .contactUs-form .contactUs-form-button:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+.contactUs .contactUs-form .contactUs-form-button:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}/*# sourceMappingURL=ContactUs.css.map */

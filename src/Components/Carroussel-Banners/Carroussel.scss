@@ -17,7 +17,12 @@
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+                
+                @media screen and (max-width: 400px){
+                    height: 250px;
+                }
             }
+
 
             .carroussel-item-textbox{
                 width: 50%;
@@ -131,6 +136,10 @@
 
                     @media screen and (max-width: 576px){
                         width: 16%;
+                    }
+
+                    @media screen and (max-width: 400px){
+                        width: 80px;
                     }
                 }
             }

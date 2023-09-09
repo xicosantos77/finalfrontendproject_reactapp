@@ -1,71 +1,79 @@
 @import "../font-sizes";
 
-.carrousselItems{
+.carrousselItems {
     padding: 80px;
 
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 576px) {
         padding: 40px;
     }
 
-    .carrousselItems-items{
+    .carrousselItems-items {
         display: flex;
-        height: 450px;
+        flex-direction: column; /* Change to a vertical layout for small screens */
+        align-items: center; /* Center items vertically */
 
-        a{
+        a {
             text-decoration: none;
             color: #232523;
-        }
-
-        a:hover{
-            transform: scale(1.02);
-            transition: ease .2s;
-            font-weight: bold;
-            background-color: #ffd050;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-
-        a:not(:hover){
-            transform: scale(1);
-            transition: ease-in-out .2s;
-        }
-
-        .carrousselItems-items-item-photo{
+            display: flex;
+            flex-direction: column; /* Center text below image on small screens */
+            align-items: center; /* Center text horizontally on small screens */
             padding: 16px;
-        }
-        .carrousselItems-items-item-text{
-            padding: 0px 16px 0px 16px;
+
+            &:hover {
+                transform: scale(1.02);
+                transition: ease 0.2s;
+                font-weight: bold;
+                background-color: #ffd050;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+
+            &:not(:hover) {
+                transform: scale(1);
+                transition: ease-in-out 0.2s;
+            }
+
+            .carrousselItems-items-item-photo {
+                padding: 0; /* Remove padding on small screens */
+            }
+
+            .carrousselItems-items-item-text {
+                padding: 16px 0 0 0; /* Adjust padding for text on small screens */
+                text-align: center; /* Center text on small screens */
+            }
         }
 
-        @media screen and (max-width: 576px){
-            p{
+        @media screen and (max-width: 576px) {
+            p {
                 font-size: $p1-size-bg;
             }
 
-            h3{
+            h3 {
                 font-size: $h3-size-bg;
             }
 
-            p{
-                display: $p2-size;
+            p {
+                font-size: $p2-size; /* Use $p2-size for small screens */
             }
 
-            img{
+            img {
                 height: 150px;
+                width: auto; /* Ensure the image scales proportionally */
             }
         }
     }
 
-    .carrousselItems-buttons{
+    .carrousselItems-buttons {
         display: flex;
         justify-content: space-around;
 
-        h1:hover{
+        h1:hover {
             cursor: pointer;
         }
 
-        @media screen and (max-width: 576px){
-            font-size: $h3-size-md;
+        @media screen and (max-width: 375px) {
+            font-size: $h3-size-md; /* Adjust font size for smaller screens */
         }
     }
 }

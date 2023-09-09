@@ -259,3 +259,44 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .header {
+        height: 40px;
+
+        .header-logo {
+            position: absolute;
+            margin-left: 10px; /* Adjust margin for mobile */
+            width: 100px; /* Adjust width for mobile */
+
+            h1 {
+                margin-top: 10px;
+                a{
+                    font-size: $h3-size-bg; /* Adjust font size for mobile */
+                }
+            }
+        }
+
+        .header-nav-hamburguer{
+            width: 100%;
+            position: absolute;
+            right: -300px;
+            
+            .header-nav-hamburguer-menu {
+                nav {
+                    ul {
+                        li {
+                            input {
+                                width: 70px; /* Adjust width for mobile */
+                            }
+                            
+                            a {
+                                font-size: $p2-size; /* Adjust font size for mobile */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

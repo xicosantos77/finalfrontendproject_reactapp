@@ -1,0 +1,16 @@
+.aboutus {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.aboutus h1 {
+  margin-bottom: 40px;
+}
+
+.aboutus h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=AboutUs.css.map */

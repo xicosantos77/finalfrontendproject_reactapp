@@ -4,6 +4,12 @@
     align-items: center;
     margin-bottom: 80px;
 
+    @media screen and (max-width: 400px){
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+
     .joinus-text{
         h2{
             font-size: 36px;

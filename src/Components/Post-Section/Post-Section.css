@@ -1,0 +1,253 @@
+.postsection {
+  padding-left: 48px;
+  padding-right: 48px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .postsection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.postsection .postsection-featuredposts {
+  width: 60%;
+  padding: 32px;
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-featuredposts {
+    width: 100%;
+    padding: 0;
+  }
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-title {
+  padding-bottom: 32px;
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-title {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-title h2 {
+  font-size: 36px;
+  margin: 0px;
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-title h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc h2 {
+  font-size: 28px;
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc h2 {
+    text-align: center;
+  }
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc p {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc p {
+    text-align: center;
+  }
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button {
+  padding: 16px 32px;
+  background-color: #ffd050;
+  border: none;
+  cursor: pointer;
+  width: 110px;
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button a {
+  text-decoration: none;
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button a h2 {
+  margin: 0px;
+  font-size: 18px;
+  color: #232523;
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button:hover {
+  background-color: #ffc21d;
+  transform: scale(1.1);
+  transition: ease 0.5s;
+  font-weight: bold;
+  border: 1px solid #836000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+@media screen and (max-width: 1440px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button a h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-featuredposts .postsection-featuredposts-content .postsection-featuredposts-content-desc .postsection-featuredposts-content-desc-button a h2 {
+    font-size: 12px;
+  }
+}
+.postsection .postsection-allposts {
+  width: 40%;
+  padding: 32px;
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-allposts {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .postsection .postsection-allposts {
+    width: 100%;
+    padding: 40px;
+  }
+}
+.postsection .postsection-allposts .postsection-allposts-nav {
+  display: flex;
+  padding-bottom: 16px;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-title {
+  width: 50%;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-title h2 {
+  font-size: 36px;
+}
+@media screen and (max-width: 576px) {
+  .postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-title h2 {
+    font-size: 16px;
+  }
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-title h2 {
+  margin: 0px;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link {
+  width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link a {
+    font-size: 16px;
+  }
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link p {
+  text-decoration: none;
+  text-align: right;
+  font-size: 16px;
+  cursor: pointer;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link p a {
+  text-decoration: none;
+  color: #232536;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link p:hover {
+  transform: scale(1.1);
+  transition: ease 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link p:hover a {
+  color: #ffd050;
+}
+.postsection .postsection-allposts .postsection-allposts-nav .postsection-allposts-nav-link p:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+.postsection .postsection-allposts .postsection-allposts-list {
+  max-height: 500px;
+  overflow-y: auto;
+  /* Styling the scrollbar */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-allposts .postsection-allposts-list {
+    max-height: 350px;
+  }
+}
+.postsection .postsection-allposts .postsection-allposts-list::-webkit-scrollbar {
+  width: 8px;
+}
+.postsection .postsection-allposts .postsection-allposts-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.postsection .postsection-allposts .postsection-allposts-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+.postsection .postsection-allposts .postsection-allposts-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post p {
+  font-size: 14px;
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post h2 {
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post p {
+    font-size: 12px;
+  }
+  .postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post h2 {
+    font-size: 16px;
+  }
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post h2 {
+  margin: 0;
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-allposts-list-post:hover {
+  padding-left: 10px;
+  transition: ease 0.5s;
+  font-weight: bold;
+  background-color: #ffd050;
+  cursor: pointer;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+.postsection .postsection-allposts .postsection-allposts-list .postsection-featuredposts-content-desc-button:not(:hover) {
+  transition: ease 0.5s;
+  background-color: #f4f4f4;
+}/*# sourceMappingURL=Post-Section.css.map */

@@ -1,0 +1,116 @@
+.allPosts h1 {
+  padding-left: 80px;
+}
+@media screen and (max-width: 576px) {
+  .allPosts h1 {
+    padding-left: 40px;
+    font-size: 24px;
+  }
+}
+.allPosts .allPosts-postList {
+  padding: 0px 80px 0px 80px;
+}
+@media screen and (max-width: 576px) {
+  .allPosts .allPosts-postList {
+    padding: 0px 40px 0px 40px;
+  }
+}
+.allPosts .allPosts-postList a {
+  text-decoration: none;
+  color: #232536;
+}
+.allPosts .allPosts-postList .allPosts-postList-post {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+  .allPosts .allPosts-postList .allPosts-postList-post {
+    flex-direction: column;
+  }
+}
+.allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-img {
+  width: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+  .allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-img {
+    width: 80%;
+  }
+}
+.allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text {
+  width: 55%;
+  margin-left: 50px;
+  margin-top: 0;
+}
+@media screen and (max-width: 576px) {
+  .allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+.allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text h6 {
+  margin-top: 0;
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text h6 {
+    font-size: 12px;
+  }
+}
+.allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text h2 {
+  font-size: 28px;
+}
+@media screen and (max-width: 1200px) {
+  .allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text h2 {
+    font-size: 18px;
+  }
+}
+.allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text p {
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .allPosts .allPosts-postList .allPosts-postList-post .allPosts-postList-post-text p {
+    font-size: 12px;
+  }
+}
+.allPosts .allPosts-postList .allPosts-postList-post:hover {
+  transform: scale(1.05);
+  transition: ease 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #aaacc0;
+  border: 1px solid #232536;
+  border-radius: 10px;
+}
+.allPosts .allPosts-postList .allPosts-postList-post:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+.allPosts .allPosts-nav {
+  display: flex;
+  justify-content: center;
+}
+.allPosts .allPosts-nav h1 {
+  padding: 0;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .allPosts .allPosts-nav h1 {
+    font-size: 16px;
+  }
+}
+.allPosts .allPosts-nav h1:hover {
+  transform: scale(1.1);
+}
+.allPosts .allPosts-nav .testimonials-carousel-controls-prev {
+  padding-right: 40px;
+}
+.allPosts .allPosts-nav .testimonials-carousel-controls-next {
+  padding-left: 40px;
+}/*# sourceMappingURL=All-Posts.css.map */

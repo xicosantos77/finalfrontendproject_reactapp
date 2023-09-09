@@ -1,0 +1,67 @@
+.joinus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 400px) {
+  .joinus {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
+}
+.joinus .joinus-text h2 {
+  font-size: 36px;
+}
+@media screen and (max-width: 1200px) {
+  .joinus .joinus-text h2 {
+    font-size: 22px;
+  }
+}
+.joinus .joinus-text p {
+  text-align: center;
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .joinus .joinus-text p {
+    font-size: 12px;
+  }
+}
+.joinus .joinus-button {
+  padding: 16px 48px;
+  background-color: #ffd050;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .joinus .joinus-button div a h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .joinus .joinus-button div a h2 {
+    font-size: 12px;
+  }
+}
+.joinus .joinus-button a {
+  text-decoration: none;
+}
+.joinus .joinus-button a h2 {
+  margin: 0px;
+  font-size: 20px;
+  color: #232536;
+}
+.joinus .joinus-button:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+.joinus .joinus-button:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}/*# sourceMappingURL=JoinUs.css.map */

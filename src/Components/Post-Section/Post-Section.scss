@@ -112,6 +112,11 @@
             padding: 0;
         } 
 
+        @media screen and (max-width: 400px){
+            width: 100%;
+            padding: 40px;
+        } 
+
         .postsection-allposts-nav{
             display: flex;
             padding-bottom: 16px;

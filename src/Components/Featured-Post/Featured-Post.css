@@ -1,0 +1,110 @@
+.featuredPost {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 80px;
+}
+@media screen and (max-width: 576px) {
+  .featuredPost {
+    padding: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.featuredPost .featuredPost-text {
+  width: 50%;
+  padding-right: 100px;
+}
+@media screen and (max-width: 576px) {
+  .featuredPost .featuredPost-text {
+    width: 100%;
+    padding: 0;
+  }
+}
+.featuredPost .featuredPost-text h6 {
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .featuredPost .featuredPost-text h6 {
+    font-size: 12px;
+  }
+}
+.featuredPost .featuredPost-text h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+@media screen and (max-width: 1200px) {
+  .featuredPost .featuredPost-text h2 {
+    font-size: 18px;
+  }
+}
+.featuredPost .featuredPost-text label {
+  font-size: 12px;
+}
+.featuredPost .featuredPost-text p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .featuredPost .featuredPost-text p {
+    font-size: 12px;
+  }
+}
+.featuredPost .featuredPost-text .featuredPost-text-button {
+  padding: 16px 32px;
+  background-color: #ffd050;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 110px;
+}
+.featuredPost .featuredPost-text .featuredPost-text-button a {
+  text-decoration: none;
+}
+.featuredPost .featuredPost-text .featuredPost-text-button a h2 {
+  margin: 0px;
+  font-size: 18px;
+  color: #232523;
+}
+.featuredPost .featuredPost-text .featuredPost-text-button:hover {
+  background-color: #ffc21d;
+  transform: scale(1.1);
+  transition: ease 0.5s;
+  font-weight: bold;
+  border: 1px solid #836000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.featuredPost .featuredPost-text .featuredPost-text-button:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+@media screen and (max-width: 1200px) {
+  .featuredPost .featuredPost-text .featuredPost-text-button {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .featuredPost .featuredPost-text .featuredPost-text-button a h2 {
+    font-size: 16px;
+  }
+}
+.featuredPost .featuredPost-text .featuredPost-text-button:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+.featuredPost .featuredPost-text .featuredPost-text-button:not(:hover) {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+.featuredPost .featuredPost-img {
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .featuredPost .featuredPost-img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Featured-Post.css.map */
